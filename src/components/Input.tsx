@@ -47,11 +47,10 @@ export default function Input({ id, label, className, type, placeholder, value, 
                     peer-placeholder-shown:translate-y-0
                     peer-focus:translate-y-0
                     peer-focus:top-[-7px]
-                    peer-focus:text-sm
-                    peer-focus:font-[500]
+                    peer-focus:text-xs
                     bg-gray-light
                     px-[5px]
-                    ${value != "" && "z-50 -translate-y-0 top-[-7px] text-xs text-violet"}
+                    ${value != "" && "z-50 translate-y-0 top-[-7px] text-xs text-violet"}
                 `}
             >
                 {label}
@@ -59,3 +58,19 @@ export default function Input({ id, label, className, type, placeholder, value, 
         </div>
     )
 }
+
+
+
+
+// absolute
+// text - md
+// duration - 150
+// transform
+//     - translate - y - 3
+// top - 4
+// z - 10
+// origin - [0]
+// peer - placeholder - shown: scale - 100
+// peer - placeholder - shown: translate - y - 0
+// peer - focus: scale - 75
+// peer - focus: -translate - y - 4
